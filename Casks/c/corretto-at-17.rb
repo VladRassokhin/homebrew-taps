@@ -1,12 +1,12 @@
-cask "corretto@8" do
+cask "corretto-at-17" do
   arch arm: "aarch64", intel: "x64"
 
-  version "8.402.08.1"
-  sha256 arm:   "8fa923be1c52a9bec98ece6c5a3c9cb8b2c2cab618cff852edc27939c0efafc1",
-         intel: "bd1a37740cb9b7592872f629043404cbc589be72c8c8e55c5e6c7087cfced9a4"
+  version "17.0.10.7.1"
+  sha256 arm:   "da70bcfc74c886ca57a85459a16fdaaad54e58247d23bfe11feb7d4b517abccb",
+         intel: "7f50e2b0d717c772dc2ffb0e801b500e23b56274c5773b393ad30422fcc9b182"
 
   url "https://corretto.aws/downloads/resources/#{version.sub(/-\d+/, "")}/amazon-corretto-#{version}-macosx-#{arch}.pkg"
-  name "AWS Corretto JDK 8"
+  name "AWS Corretto JDK 17"
   desc "OpenJDK distribution from Amazon"
   homepage "https://corretto.aws/"
 
